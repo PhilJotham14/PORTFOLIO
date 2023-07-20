@@ -29,6 +29,18 @@
     <!-- Script JS to enable Portfolio word change continously -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+
+    <!-- Send an Email -->
+    <script src="js/email.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("NMjjGTpQTLxIksxsp");
+        })();
+    </script>
+    <!-- End of Send an Email -->
 </head>
 
 <body>
@@ -346,8 +358,14 @@
                                                 <img src="images/mockups/Dashboard.png" alt="">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>DASHBOARD WIREFRAME</h4>
+                                                <h4>MERN STACK DASHBOARD WEB-APPLICATION</h4>
                                                 <p>Admin Dashboard Wireframe design using FIGMA.</p>
+                                                <div id="headerPopup"
+                                                    class="mfp-hide embed-responsive embed-responsive-21by9">
+                                                    <iframe class="embed-responsive-item" width="854" height="480"
+                                                        src="images/MERN ADMIN DASHBOARD.mp4" frameborder="0"
+                                                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -373,7 +391,7 @@
                                                 <div id="headerPopup"
                                                     class="mfp-hide embed-responsive embed-responsive-21by9">
                                                     <iframe class="embed-responsive-item" width="854" height="480"
-                                                        src="/images/Dark Background Web.mp4" frameborder="0"
+                                                        src="images/Dark Background Web.mp4" frameborder="0"
                                                         allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                                 </div>
                                             </div>
@@ -533,9 +551,9 @@
                                                 <textarea class="form-control" name="message" id="message" required
                                                     placeholder="Message"></textarea>
                                             </div>
-                                            <button class="btn" type="submit">Submit</button>
+                                            <button class="btn" type="submit" onclick="sendMail()">Submit</button>
                                         </form>
-                                        <div id="form-messages" class="mt-3"></div>
+                                        <!-- <div id="form-messages" class="mt-3"></div> -->
                                     </div>
                                 </div>
                             </div>
