@@ -106,13 +106,14 @@
                 }
             });
         }
+        // turned off carousel auto play
         if ($('.gallery-list').length) {
             $('.gallery-list').owlCarousel({
                 loop: false,
                 nav: false,
                 dots: true,
                 items: 3,
-                autoplay: true,
+                autoplay: false,
                 smartSpeed: 700,
                 autoplayTimeout: 4000,
                 responsive: {
